@@ -1,0 +1,135 @@
+/*corpo*/
+body {
+  height: 1340px !important;
+}
+
+/*conteúdo ficar no lugar certo*/
+.div-tamanho-navbar {
+  width: 100%;
+  height: 140px;
+}
+
+/*título da página*/
+.título h1 {
+  font-size: 20px;
+}
+
+#anunciar {
+  color: #637CFF!important;
+}
+
+
+
+/* ------------ INPUT ------------ */
+
+.input input,
+.image input,
+textarea,
+select,
+.select2-container--default .select2-selection--multiple {
+  margin: 1% 0% 0% 0%!important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  background-color: white;
+  border: none !important;
+}
+
+.image input {
+  padding: 4px 4px 4px 4px;
+  border-radius: 5px 5px;
+  width: 100%;
+}
+
+.alert {
+  height: 50%;
+  width: 50%;
+  text-align: justify;
+  font-size: 12px !important;
+  padding: 2px 6px 0px 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 1rem 0;
+}
+
+strong {
+  padding-right: 6px;
+}
+
+.alert:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #e2e3e5;
+  top: -21px;
+  left: 45%;
+}
+
+.alert-descricao,
+.alert-resumo {
+  width: 90%;
+}
+
+.cadastro-livro-form-btn {
+  margin-left: 83%;
+  text-align: center;
+  display: block;
+  width: 180px;
+  height: 36px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: #637CFF;
+  color: #fff;
+  border: none;
+}
+
+
+
+/* ------------ RESPONSIVIDADE ------------ */
+@media (min-width: 1400px) {
+  .alert:after {
+    left: 48%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .cadastro-livro-form-btn {
+    margin-left: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .cadastro-livro-form-btn {
+    margin-left: 72%;
+  }
+}
+
+@media (max-width: 767px) {
+  .field label {
+    font-size: 14px;
+  }
+
+  .cadastro-livro-form-btn {
+    margin-left: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  .cadastro-livro-form-btn {
+    margin-left: 48%;
+  }
+
+  .field label {
+    font-size: 12px;
+  }
+
+  #preco {
+    margin-top: 7px!important;
+  }
+
+  #precoLivro {
+    margin-top: 12px!important;
+  }
+}

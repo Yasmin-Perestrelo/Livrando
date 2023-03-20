@@ -1,0 +1,75 @@
+/* ------------ NOTIFICAÇÕES ------------ */
+.título-recomendação a,
+.título-confirmação a {
+  font-size: 16px;
+  margin-bottom: 2%;
+  text-decoration: none;
+  color: #373737;
+}
+
+.fundo-título {
+  border-bottom: #37373756 1px solid;
+}
+
+.Confirmação {
+  display: none;
+}
+
+td {
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap; 
+  text-overflow:ellipsis; 
+  overflow: hidden; 
+  max-width: 1px;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+td a {
+  text-decoration: none;
+  color: #373737;
+}
+
+
+
+/*PAGINAÇÃO*/
+.page-link {
+  background-color: transparent!important;
+  border: none!important;
+  color: #637CFF!important;
+}
+
+.page-item:hover {
+  background-color: #637CFF;
+  border-radius: 15% 15%;
+}
+
+.page-link:hover,
+.page-link span:hover {
+  color: white!important;
+}
+
+
+
+/* ------------ RESPONSIVIDADE ------------ */
+@media (max-width: 991px) {
+  .título-recomendação a,
+  .título-confirmação a {
+    font-size: 14px!important;
+    padding-bottom: 1%!important;
+  }
+
+  .título-confirmação a {
+    float: right;
+    margin-bottom: -1%;
+  }
+
+ 
+}

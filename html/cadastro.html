@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Sebo virtual de venda e trocas de livros" />
+  <meta name="keywords" content="Sebo virtual, Livro, Venda de livros, Troca de livros, Livrando, Compra de livros" />
+  <meta name="author" content="Yasmin Perestrelo da Silva" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../css/NavbarFooter.css">
+  <link rel="stylesheet" type="text/css" href="../css/TelaCadastro.css">
+
+  <!--Link Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--Link Select-->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <!--ícone no navegador-->
+  <link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/Livrando.svg">
+
+  <!--Link google fonts (Kufam)-->
+  <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+  <!--Link google fonts (Inter)-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <title>Livrando | Sebo Virtual</title>
+
+  <!--Link do FontAwesome-->
+  <script src="https://kit.fontawesome.com/0f8bd558ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="form signup">
+    <div class="container-fluid">
+
+      <div class="row">
+        <!-- imagem -->
+        <div class="d-none d-md-block col-md-6 col-lg-6 col-xl-6">
+          <div class="login-img">
+            <img class="img" src="../img/Cadastro.svg" alt="Livrando">
+          </div>
+        </div>
+
+
+        <!-- Painel login -->
+
+        <div class="d-none d-md-block col-md-2 col-lg-2 col-xl-1"></div>
+        <div class="painel-livro d-none d-md-block col-md-4 col-lg-4 col-xl-5">
+          <form method="POST" class="login-form validate-form align-items-center">
+            <div class="container">
+              <div class="row">
+                <h1 class="login-form-title d-none d-md-block col-md-10 col-lg-10 col-xl-10" id="cadastro">Cadastro</h1>
+                <a class="d-flex col-md-2 col-lg-1" id="pt-language" href="#pt" onclick="changeLanguage('pt')"><img
+                    class="brasil" src="../img/Brasil.png" alt="Português"></a>
+                <a class="d-flex col-md-1 col-lg-1" id="en-language" href="#eng" onclick="changeLanguage('eng')"><img
+                    class="usa" src="../img/Usa.png" alt="Inglês"></a>
+                <hr>
+                <form method="POST" class="login-form validate-form align-items-center">
+                  <div class="container">
+                    <div class="row">
+                      <div class="error-text"></div>
+                      <div class="field input">
+                        <label style="margin-top: 3%!important;" id="nome">Nome</label>
+                        <input type="text" id="nome2" name="nome" placeholder="Digite seu nome" required>
+                      </div>
+                      <div class="field input">
+                        <label id="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome2" name="sobrenome"
+                          placeholder="Como gostaria de ser chamado(a)" required>
+                      </div>
+                      <div class="field input">
+                        <label id="nascimento">Data de nascimento</label>
+                        <input type="date" name="data_nascimento" min="1922-01-01" max="2022-12-31" required>
+                      </div>
+                      <div class="field input">
+                        <label>E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                      </div>
+                      <div class="field input">
+                        <label>CPF</label>
+                        <input type="text" maxlength="14" name="cpf" id="cpf" placeholder="Entre com o seu CPF"
+                          required>
+                      </div>
+                      <div class="field input">
+                        <label id="genero">Gêneros preferidos</label>
+                        <select class="js-example-basic-multiple" name="genero[]" multiple="multiple">
+
+
+                        </select>
+                      </div>
+                      <div class="field input">
+                        <label id="senha2">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite a sua senha" required>
+                        <i id="olho1" class="fas fa-eye"></i>
+                      </div>
+                      <div class="field input">
+                        <label id="confirmar">Confirmação de senha</label>
+                        <input type="password" name="confirm-senha" id="confirmar2" placeholder="Confirme a sua senha"
+                          required>
+                        <i id="olho2" class="fas fa-eye"></i>
+                      </div>
+                      <div class="field image">
+                        <label id="imagem">Imagem do perfil</label>
+                        <input type="file" name="imagem" accept="image/x-png,image/gif,image/jpeg,image/jpg">
+                      </div>
+                      <div class="field button">
+                        <input id="cadastrar" type="submit" name="submit" value="Cadastrar">
+                      </div>
+                </form>
+                <hr>
+                <div class="login">
+                  <label id="login" Já tem cadastro?></label> <a href="../html/login.html" id="login2" class="sem-login">Acesse sua conta</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Caminho do JavaScript NavbarFooter-->
+  <script type="text/javascript" src="../js/NavbarFooter.js"></script>
+  <script type="text/javascript" src="../js/Linguagens/LinguagemTelaCadastro.js"></script>
+  <script src="../js/pass-show-hide.js"></script>
+  <script src="../js/signup.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.js-example-basic-multiple').select2();
+    });
+  </script>
+
+</body>
+
+</html>

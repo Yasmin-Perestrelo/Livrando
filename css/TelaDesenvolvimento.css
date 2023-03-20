@@ -1,0 +1,19 @@
+div h1 {
+  text-align: center;
+  margin-top: 15%;
+}
+
+div h1+p {
+  text-align: center;
+}
+
+#pesquisa {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+@media (min-width: 1400px) {
+  .teste {
+    margin-top: 10% !important;
+    margin-bottom: 11%;
+  }
+}

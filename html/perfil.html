@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sebo virtual de venda e trocas de livros"/>
+    <meta name="keywords" content="Sebo virtual, Livro, Venda de livros, Troca de livros, Livrando, Compra de livros"/>
+    <meta name="author" content="Isabelle Nascimento de Oliveira, Jennifer Porzelt Gonçalves da Silva, Katharine Fernandes Viana Rodriguês, Larissa ALves de Souza, Nícolas Henriques de Almeida, Yasmin Perestrelo da Silva"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/TelaPerfil.css">
+    <link rel="stylesheet" type="text/css" href="../css/NavbarFooter.css">
+
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--link SwiperJS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!--ícone no navegador-->
+    <link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/Livrando.svg" >
+
+    <!--Link google fonts (Kufam)-->
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <!--Link google fonts (Inter)-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Livrando | Sebo Virtual</title>
+
+    <!--Link do FontAwesome-->
+    <script src="https://kit.fontawesome.com/0f8bd558ab.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <header>
+    <section>
+      <!--Navbar Superior - Pc e tablet-->
+      <nav style="position: fixed;" class="navbar col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="fluido-navbar container-fluid" style="height: 70px;">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- celular -->
+              <!-- botão menu -->
+              <div class="col-1 col-sm-1 d-sm-block d-md-none"> 
+                <figure>
+                  <button class="navbar-toggler btn-expand-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><img class="menu" src="../img/Menu.svg" alt="Menu"></button>
+                </figure>
+              </div>
+
+              <div style="display: none!important; width: 280px;" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                  <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <!-- <div class="dropdown">
+                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div> -->
+              </div>
+
+              <div class="d-none col-sm-1 d-sm-block d-md-none"></div>
+              <div class="col-1 col-sm-1 d-sm-block d-md-none lupa-div-cel justify-content-center" id="div-lupa-cel">
+                <i class="fas fa-search fa-lg lupa"></i>
+              </div>
+              <div class="col-1 col-sm-1 d-sm-block d-md-none"></div>
+              <!-- celular e pc -->
+              <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"> 
+                <figure>
+                  <img class="logo" src="../img/Livrando.svg" alt="Logo Livrando">
+                </figure>
+              </div>
+              <!-- pc -->
+              <div class="d-none d-lg-block col-lg-2 col-xl-2">
+                <h1 class="navbar-brand título-livrando">Livrando</h1>
+              </div>
+              <!-- celular -->
+              <div class="d-block d-lg-none col-5 col-sm-4 col-md-3">
+                <h1 class="navbar-brand título-livrando" style="margin-left: 20%;">Livrando</h1>
+              </div>
+              <div class="col-1 col-sm-1 d-sm-block d-md-none"></div>
+
+              <form method="POST" action="../html/pesquisaLivro.html" class="form-pesquisa d-none d-md-block d-flex col-md-5 col-lg-5 col-xl-5">
+                
+                <input type="text"
+                  style="box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.10); border-radius: 5px 5px!important; margin-top: -4%;"
+                  class="d-none d-md-block d-lg-none form-control pesquisa" placeholder="Pesquisa"
+                  aria-describedby="div-lupa" name="pesquisa">
+                <input id="pesquisa2" type="text" class="d-none d-lg-block form-control pesquisa"
+                  placeholder="Pesquisa" name="pesquisa">
+                  <input type="submit" id="btn-transparente" value="">
+              </form>
+                <div class="d-flex d-none d-md-block col-md-1 col-lg-1 col-xl-1"></div>
+                <div class="foto-de-perfil2 d-flex col-md-1 col-lg-1 col-xl-1">
+                  <img src="../img/Perfil.svg" class="img-fluid" alt="Seu perfil">
+                </div>
+                <div class="d-flex d-none d-md-block col-md-2 col-lg-2 col-xl-2">
+                  <span id="nome-usuário" class="nome-usuário text-truncate">Yan</span>
+                  <div onclick="MostrarPerfil()">
+                    <img id="seta-navbar-cima" src="../img/Seta.png" alt="Seta" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img id="seta-navbar-baixo" src="../img/Seta.png" alt="Seta" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <a href="../html/perfil.html"><i class="fa-solid fa-user"></i> &nbsp;Meu perfil</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-heart"></i> &nbsp;Lista de desejos</a>
+                    <hr>
+                    <a href="../html/perfilNotificacoes.html"><i class="fa-solid fa-bell"></i> &nbsp;Notificações</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-book"></i> &nbsp;Meus anúncios</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp;Sair</a>
+                  </div>
+                </div>
+              <div class="d-none d-lg-block col-lg-1 col-xl-1"></div>
+                <div class="d-flex col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1">
+                  <picture>
+                    <img src="../img/Perfil.svg" class="img-fluid foto-de-perfil" alt="Seu perfil">
+                  </picture>
+                </div>
+                <div class="d-flex col-md-1 col-lg-1">
+                  <a id="login" class="d-none d-md-block btn login" href="../html/login.html">Login</a>
+                  <div class="d-none d-lg-block" id="linha-vertical"></div>
+                </div>
+                <div class="d-flex d-none d-md-block col-md-1 col-lg-1">
+                  <a id="cadastro" class="btn cadastro" href="../telaCadastro/index.html">Cadastro</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!--Navbar Inferior - Pc e tablet-->
+        <div class="navbar2 d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row">
+                <ul style="margin-left: 13%;" class="d-flex col-md-12 col-lg-12">
+                  <li class="nav-item livro d-flex col-lg-3">
+                    <a id="pesquisa" class="nav-link active" href="index.html">Pesquisa de
+                      livros</a>
+                  </li>
+                  <li class="nav-item chat d-flex col-lg-2">
+                    <a id="chat" class="nav-link" href="../html/users.html">Chat</a>
+                  </li>
+                  <li class="nav-item power-up d-flex col-lg-2">
+                    <a id="powerUp" class="nav-link" href="../html/desenvolvimento.html">Power Up</a>
+                  </li>
+                  <li class="nav-item anunciar d-flex col-md-2 col-lg-2">
+                    <a id="anunciar" class="nav-link" href="../html/livroaAnuncio.html">Anunciar</a>
+                  </li>
+                  <a class="d-flex col-md-2 col-lg-1" id="pt-language" href="#pt" onclick="changeLanguage('pt')"><img class="brasil"
+                      src="../img/Brasil.png" alt="Português"></a>
+                  <a class="d-flex col-md-1 col-lg-1" id="en-language" href="#eng" onclick="changeLanguage('eng')"><img class="usa" src="../img/Usa.png"
+                      alt="Inglês"></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Div sombra - Pc e tablet-->
+        <div class="separação-menu"><br></div>
+      </nav>
+    </section>
+    </header>
+  
+    <main>
+      <section>
+        <div class="div-tamanho-navbar"><br></div>
+        <div class="container">
+          <div class="row">
+            <!--Menu lateral-->
+            <div class="menu-lateral d-none d-md-block col-md-3 col-lg-3 col-xl-2">
+              <nav class="nav flex-column">
+                <a class="nav-link menu" style="color:#637CFF!important;" href="../html/perfil.html"><i class="fa-solid fa-user"></i> &nbsp;Meu perfil</a>
+                <a class="nav-link menu" href="#"><i class="fa-solid fa-heart"></i> &nbsp;Lista de desejos</a>
+                <a class="nav-link menu" href="../telaPerfilNotificacoes/PerfilNotificacoes.html"><i class="fa-solid fa-bell"></i> &nbsp;Notificações <span style="background-color: #637CFF; font-size:10px;" class="badge rounded-pill">1</span></a>
+                <a class="nav-link menu" href="#"><i class="fa-solid fa-book"></i> &nbsp;Meus anúncios</a>
+                <!-- <a class="nav-link" href="#"><i class="fa-solid fa-coins"></i> &nbsp;Meus planos</a> -->
+                <a class="nav-link menu" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp;Sair</a>
+              </nav>
+            </div>
+            <!--Perfil-->
+            <div class="perfil d-none d-md-block col-md-9 col-lg-9 col-xl-10">
+              <h1>Meu Perfil</h1>
+              <hr><br>
+              <div class="fundo-principal d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                <div class="papel-de-parede d-md-block"><br></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-1"></div>
+                    <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-1">
+                      <span class="fundo-foto-perfil align-items-center">
+                        <span class="fundo-foto-perfil2">
+                          <img src="../img/O_Bosque_das_Coisas_Perdidas.svg" class="img-fluid" alt="Seu perfil">
+                        </span>
+                      </span>
+                    </div>
+                    <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-2">
+                      <p class="text-truncate">Yan</p>
+                      <div class="row">
+                        <span class="d-none d-md-block col-md-4 col-lg-4 col-xl-4 melhor-anunciante align-items-center">
+                          <span class="melhor-anunciante2">
+                            <img src="../img/O_Bosque_das_Coisas_Perdidas.svg" class="img-fluid" alt="Seu perfil">
+                          </span>
+                        </span>
+                        <span class="d-none d-md-block col-md-4 col-lg-4 col-xl-4 melhor-cliente align-items-center">
+                          <span class="melhor-cliente2">
+                            <img src="../img/O_Bosque_das_Coisas_Perdidas.svg" class="img-fluid" alt="Seu perfil">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-5 col-lg-5 col-xl-5"></div>
+                    <div class="d-none d-md-block col-md-1 col-lg-2 col-xl-2">
+                        <!--aqui era onde o "form" ficava (quando começou a dar erro)--> 
+                      <!-- <buttom class="botão-editar-perfil" id="editar-perfil" onclick="desabilitar(this.checked)">Editar Perfil</buttom> -->
+                      <button class="btn botão-editar-perfil" onclick="toggleEnable('nome', 'apelido', 'data_nascimento', 'email', 'cpf', 'genero-livro')"> Editar perfil </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    
+                    <div class="fundo-principal2 d-none d-md-block col-md-11 col-lg-11 col-xl-11">
+                      <div class="row">
+                        <form action="#" method="POST">
+                       
+                          <!-- nome -->
+                          <div class="nome d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>Nome</label>
+                          </div>
+                          <!-- @@@ Back, vcs precisam colocar os dados do usuário na parte: value="" -->
+                          <div class="wrap-input validate-input d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <input class="input-nome form-control" maxlength="30" value="Yasmin" type="text" id="nome" name="nome" disabled>
+                          </div>
+
+                          <!-- apelido -->
+                          <div class="apelido d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>Apelido</label>
+                          </div>
+                          <div class="wrap-input validate-input d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <input class="input-apelido form-control" maxlength="30" value="Perestrelo da Silva" type="text" id="apelido" name="apelido" disabled>
+                          </div>
+
+                          <!-- gênero -->
+                          <!-- <div class="apelido d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>Gênero</label>
+                          </div> -->
+                          <!-- <div class="container">
+                            <div class="row">
+                              <div class="form-check d-none d-md-block col-md-3 col-lg-3 col-xl-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" disabled>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Feminino
+                                </label>
+                              </div>
+                              <div class="form-check d-none d-md-block col-md-3 col-lg-3 col-xl-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Masculino
+                                </label>
+                              </div>
+                              <div class="form-check d-none d-md-block col-md-3 col-lg-3 col-xl-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Outro
+                                </label>
+                              </div>
+                            </div>
+                          </div> -->
+                          <!-- <div class=" genero form-group d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <select class="form-select input-genero" id="genero" aria-label="Default select example" disabled>
+                              <option value="feminino">Feminino</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="outro">Outro</option>
+                            </select>
+                          </div> -->
+
+                          <!-- nascimento -->
+                          <div class="nascimento d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>Data de Nascimento</label>
+                          </div>
+                          <div class="wrap-input validate-input d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <input class="input-nascimento form-control" value="15/05/2004" type="date" id="data_nascimento" name="data_nascimento" min="1922-01-01" max="2022-12-31" disabled>
+                          </div>
+
+                          <!-- email -->
+                          <div class="email d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>E-mail</label>
+                          </div>
+                          <div class="wrap-input validate-input d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <input class="input-email form-control" maxlength="40" value="perestreloyasmin@gmail.com" type="email" id="email" name="email" disabled>
+                          </div>
+
+                          <!-- telefone -->
+                          <div class="telefone d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>CPF</label>
+                          </div>
+                          <div class="wrap-input validate-input d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <input class="input-telefone form-control" maxlength="11" value="000.000.000-00" type="text" id="cpf" name="cpf" disabled>
+                          </div><br>
+
+                          <input id="editar" class="btn btn-primary" type="submit" value="editar">
+                        </form>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="genero-livro d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+                            <label>Gêneros de livro preferidos:</label>
+                          </div>
+                        <div id="formulario">
+                          <div id="target" style="display:flex;" class="wrap-input validate-input d-none d-md-block col-md-3 col-lg-3 col-xl-3">
+                            
+                            
+                            <!--tá no js-->
+                          </div>
+                          <a type="button" class="add-categoria" onclick="addNew()">Adicionar categoria</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+    </main>
+
+    <footer>
+      <section>
+        <div class="rodape d-none d-md-block col-md-12 col-lg-12 col-xl-12">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-9 col-lg-9 col-xl-9">
+                <ul class="conteudo-rodape d-flex col-md-12 col-lg-12 col-xl-12">
+                  <li style="margin-left: -30px;">
+                    <a id="quemSomos" href="#">Quem somos?</a>
+                  </li>
+                  <li>
+                    <a id="faleConosco" href="#">Fale Conosco</a>
+                  </li>
+                  <li>
+                    <a href="#">Power Up</a>
+                  </li>
+                  <li>
+                    <a id="devolucoes" href="#">Devoluções</a>
+                  </li>
+                  <li>
+                    <a id="anunciar2" href="#">Anunciar</a>
+                  </li>
+                  <li>
+                  <a href="#">Sair</a>
+                  </li>
+                </ul>
+              </div>
+              <div class=" rede-social d-none d-md-block col-md-3 col-lg-3 col-xl-3">
+                <a href="https://instagram.com/livrando___" target="_blank"><img style="margin-left: 30%;" class="insta" src="../img/instagram.png" alt="Instagram"></a>
+                <a href="https://m.facebook.com/profile.php?id=100082242854451" target="_blank"><img class="face" src="../img/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/IfspLivrando" target="_blank"><img class="twi" src="../img/twitter.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/channel/UCUL9EBSUOC52KpyR5jM37rA" target="_blank"><img class="tube" src="../img/youtube.png" alt="Youtube"></a>
+              </div>
+            </div>  
+            <hr>
+            <p id="creditos" class="creditos">
+              © Livrando.com.br Serviços de Busca na Internet Ltda - CNPJ 00.000.000/0000-00<br>
+              Rua xxxxxxxxxx, 000, 00 e 00 andar, Centro, São Paulo/SP, CEP: 00000-000 - atendimento@livrando.com.br
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- <a href="#" data-id="1" id="adicionarCampo">+ adicionar campo</a>
+    
+    
+    <div id="formulario"></div>-->
+    
+    
+    
+
+    <!--Caminho do JavaScript-->
+    <script type="text/javascript" src="../js/TelaPerfil.js"></script>
+    <!--Caminho do JavaScript NavbarFooter-->
+    <script type="text/javascript" src="../js/NavbarFooter.js"></script>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--JavaScript Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

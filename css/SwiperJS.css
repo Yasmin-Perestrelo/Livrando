@@ -1,0 +1,84 @@
+    .swiper {
+      width: 770px;
+      height: 150px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      margin-left: 0.8%;
+      border-radius: 5px 5px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 150%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 5px 5px;
+      z-index: -1;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+      color:black;
+    }
+
+    
+
+   /* ------------ RESPONSIVIDADE ------------ */
+
+    @media (max-width: 1199px) {
+      .swiper{
+        width: 640px;
+        height: 140px;
+      }
+    }
+    
+    @media (max-width: 991px){
+      .swiper{
+        width: 415px!important;
+        height: 90px!important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .swiper{
+        width: 100%!important;
+        height: 110px!important;
+        margin-left: -3%!important;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .swiper{
+        width: 110%!important;
+        height: 90px!important;
+      }
+    }
+
+    /* @media (max-width: 760px) {
+      .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    } */

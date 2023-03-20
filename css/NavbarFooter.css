@@ -1,0 +1,493 @@
+/*Resetando os valores padrões da página*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  outline: none;
+  list-style: none;
+}
+
+/*geral para todos os links, parágrafos, títulos, label e select*/
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+select,
+span {
+  font-family: 'Inter', sans-serif;
+  color: #373737;
+}
+
+/*corpo*/
+body {
+  background-color: #F4F4F4 !important;
+}
+
+
+
+/* ------------ NAVBAR ------------ */
+/*navbar superior*/
+.navbar {
+  background-color: white;
+  padding-bottom: 0rem !important;
+  padding-top: 1px !important;
+}
+
+/*navbar inferior*/
+.navbar2 {
+  background-color: #F8F8F8;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+/*div sombra menu*/
+.separação-menu {
+  background-color: #F4F4F4;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  height: 10px;
+}
+
+/*logo livrando*/
+.logo {
+  width: 75px;
+  height: 75px;
+  margin-top: -4%;
+}
+
+/*título que fica do lado da logo livrando*/
+.título-livrando {
+  font-family: 'Kufam', sans-serif;
+  text-transform: uppercase;
+  margin-top: 1%;
+}
+
+.form-pesquisa {
+  margin-top: -10px!important;
+}
+
+/*input de pesquisa*/
+.pesquisa {
+  margin-left: -6px;
+  margin-top: 6%;
+  border-left: 0px !important;
+  border-radius: 0px 5px 5px 0px !important;
+  font-family: 'Inter', sans-serif;
+  border: none !important;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.10);
+}
+
+/*texto que fica dentro do campo pesquisa*/
+.pesquisa::placeholder {
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/*ícone de lupa*/
+.lupa {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/*botão não clicável de lupa*/
+.lupa-div {
+  border: none !important;
+  box-shadow: -3px 4px 4px rgba(0, 0, 0, 0.10);
+  width: 10%;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/*botão de pesquisa transparente*/
+#btn-transparente {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}
+
+/*todos os ícones*/
+.fas {
+  font-weight: 600;
+}
+
+/*tirar o foco azul do input*/
+.form-control:focus {
+  color: none !important;
+  background-color: none !important;
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.10) !important;
+}
+
+/*imagem de perfil*/
+.foto-de-perfil {
+  width: 50px;
+  height: 50px;
+  margin-left: 30%;
+  margin-top: -15px;
+}
+
+/*linha separação login e cadastro*/
+#linha-vertical {
+  height: 25px;
+  margin-left: 20%;
+  margin-top: -5%;
+  border-right: 1px solid black;
+}
+
+/*btn login e btn cadastro*/
+.login,
+.cadastro {
+  font-family: 'Inter', sans-serif;
+  color: rgba(0, 0, 0, 0.25);
+  margin-top: -10px;
+}
+
+/*tirar o foco azul do input*/
+.login:focus,
+.cadastro:focus,
+.login:hover,
+.cadastro:hover {
+  color: #637CFF !important;
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: 0px 0px !important;
+  transition-duration: 0.3s;
+}
+
+/*textos do navbar*/
+.nav-link {
+  color: rgba(0, 0, 0, 0.45)!important;
+}
+
+/*foco dos textos do navbar*/
+.nav-link:hover,
+.nav-link:focus {
+  color: #637CFF !important;
+}
+
+/*navbar acima de tudo*/
+.navbar {
+  z-index: 2;
+}
+
+/*listas do menu inferior*/
+.navbar2 ul {
+  margin-bottom: -0.5%;
+  font-size: 16px;
+  z-index: 2;
+}
+
+/*idioma*/
+.brasil,
+.usa {
+  width: 30px;
+  height: 30px;
+}
+
+/*português*/
+.brasil {
+  margin-left: 70%;
+}
+
+/*inglês*/
+.usa {
+  margin-left: 20%;
+}
+
+/* ------------ PERFIL NAVBAR ------------ */
+
+/*div da imagem de perfil autenticada*/
+.foto-de-perfil2 {
+  width: 70px !important;
+  height: 50px;
+  margin-right: -1%;
+  margin-left: 36px;
+  border-radius: 5px 5px;
+}
+
+.foto-de-perfil2 span {
+  height: 46px;
+  width: 60px;
+  border-radius: 50%;
+  z-index: 2;
+
+}
+
+/*imagem de perfil autenticada*/
+.foto-de-perfil2 img {
+  width: 150%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  z-index: -1;
+  margin-top: -10%;
+}
+
+#seta-navbar-cima,
+#seta-navbar-baixo {
+  width: 13px;
+  cursor: pointer;
+  margin-top: -18px!important;
+  margin-left: 70%;
+}
+
+#nome-usuário {
+  margin-right: 10%;
+  color: #373737!important; 
+  position: absolute;
+  top: 20%;
+}
+
+#seta-navbar-baixo {
+  transform: rotate(180deg);
+}
+
+.card {
+  position: absolute!important;
+  z-index: 3;
+  width: 15%;
+  border: none!important;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15)!important;
+  left: 78%;
+  font-size: 14px;
+}
+
+.card:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid white;
+  top: -20px;
+  left: 45%;
+}
+
+.card a {
+  outline: none;
+  text-decoration: none;
+  color: #373737;
+}
+
+.card a:last-child {
+  color: #bc1f73;
+}
+
+.card a:hover {
+  transition-duration: 0.4s;
+}
+
+
+/* ------------ RODAPÉ ------------ */
+.rodape {
+  width: auto;
+  height: 160px;
+  background-color: white;
+  margin-top: 33px !important;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.conteudo-rodape li a {
+  font-family: 'Inter', sans-serif;
+  color: #373737;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.conteudo-rodape li {
+  margin-left: 5%;
+}
+
+.conteudo-rodape a:hover {
+  color: #637CFF;
+  transition: 0.3s;
+}
+
+.creditos {
+  font-size: 10px;
+}
+
+.insta,
+.face,
+.twi,
+.tube {
+  width: 30px;
+  margin-left: 5%;
+}
+
+.insta:hover,
+.face:hover,
+.twi:hover,
+.tube:hover {
+  width: 35px;
+  transition: 0.3s;
+}
+
+
+
+/* ------------ RESPONSIVIDADE ------------ */
+
+@media (max-width: 1199px) {
+  .form-pesquisa {
+    margin-top: 0px!important;
+  }
+
+  .insta {
+    margin-left: 20% !important;
+  }
+
+  /*imagem de perfil autenticada*/
+  .foto-de-perfil2  {
+    margin-left: 19px;
+  }
+
+  #seta-navbar-cima,
+  #seta-navbar-baixo {
+    margin-left: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .insta {
+    margin-left: 10% !important;
+  }
+
+  .pesquisa {
+    margin-top: 8%!important;
+  }
+
+  .insta,
+  .face,
+  .twi,
+  .tube {
+    width: 25px;
+    margin-left: 5%;
+  }
+
+  .conteudo-rodape li a {
+    font-size: 14px;
+  }
+
+  .conteudo-rodape li {
+    margin-left: 6%;
+  }
+
+  /*imagem de perfil autenticada*/
+  .foto-de-perfil2  {
+    margin-left: -70px;
+  }
+
+  .fluido-navbar {
+    padding-bottom: 80px;
+  }
+
+  .card {
+    left: 75%;
+  }
+
+  #seta-navbar-cima,
+  #seta-navbar-baixo {
+    margin-left: 110%;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    width: 20px;
+    margin-top: 30%!important;
+    cursor: pointer;
+  }
+
+  picture .foto-de-perfil {
+    width: 40px!important;
+    height: 40px!important;
+    margin-top: -40%;
+  }
+
+  .lupa-div-cel {
+    margin-top: -1%!important;
+    cursor: pointer;
+  }
+
+  .conteudo-rodape li a {
+    font-size: 14px;
+  }
+
+  /* menu lateral */
+
+  .menuLateral {
+    margin-top: 5%;
+    z-index: 4; 
+    height: 100%; 
+    width: 250px;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+    padding-bottom: 7%;
+    padding-right: 2%;
+  }
+
+  .imagem {
+    display: flex;
+  }
+
+  .menuLateral img {
+    width: 30%;
+    margin: auto;
+    display: block;
+  }
+
+  .menuLateral span {
+    margin-right: 3%;
+    margin-left: -3%;
+  }
+
+  .menuLateral ul li a{
+    text-decoration: none;
+    color: #535461;
+    text-align: center!important;
+  }
+
+  .gatos img {
+    width: 187px;
+  }
+
+  .brasil,
+  .usa {
+    width: 30px!important;
+    height: 30px;
+  }
+
+  .nacionalidade {
+    display: flex;
+    float: right;
+  }
+}
+
+@media (max-width: 575px) {
+  .título-livrando {
+    margin-left: 25%!important;
+  }
+
+  .lupa-div-cel {
+    margin-top: -2%!important;
+    cursor: pointer;
+    margin-left: 3%;
+  }
+  
+  .conteudo-rodape li a {
+    font-size: 12px;
+  }
+}
+
+

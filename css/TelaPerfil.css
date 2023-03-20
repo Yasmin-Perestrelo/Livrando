@@ -1,0 +1,217 @@
+/* ------------ MENU LATERAL ------------ */
+/*conteúdo ficar no lugar certo*/
+.div-tamanho-navbar {
+  width: 100%;
+  height: 140px;
+}
+
+.menu {
+  font-size: 14px!important;
+}
+
+.menu-lateral .nav-link:last-child {
+  color: #bc1f73!important;
+}
+
+.nav {
+  border-right: #373737 1px solid;
+  position: fixed;
+}
+
+/*título da página*/
+.perfil h1 {
+  font-size: 20px;
+}
+
+#pesquisa {
+  color:rgba(0, 0, 0, 0.25)!important;
+}
+
+
+/* ------------ PERFIL ------------ */
+.fundo-principal {
+  border-radius: 10px 10px;
+  background-color: white;
+}
+
+.papel-de-parede {
+  border-radius: 10px 10px 0px 0px;
+  height: 55px;
+  background-color: #C1CBFF;
+}
+
+.fundo-foto-perfil {
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: -40% 0% 0% -40%;
+  background-color: white;
+}
+
+.nome-principal {
+  margin-top: 6%!important;
+}
+
+.fundo-foto-perfil .fundo-foto-perfil2,
+.melhor-anunciante .melhor-anunciante2,
+.melhor-cliente .melhor-cliente2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 7.5%;
+  margin-left: 7.5%;
+  z-index: 2;
+}
+
+.fundo-foto-perfil2 img,
+.melhor-cliente2 img,
+.melhor-anunciante2 img {
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.fundo-foto-perfil2 {
+  margin-left: 9%!important;
+}
+
+.fundo-principal p {
+  margin: 10% 0% 0% 10%;
+}
+
+.melhor-anunciante .melhor-anunciante2,
+.melhor-cliente .melhor-cliente2 {
+  height: 20px;
+  width: 20px;
+  background-color: #C1CBFF;
+}
+
+.melhor-anunciante {
+  margin: 0% -15% 0% 10%;
+}
+
+.melhor-cliente2 img,
+.melhor-anunciante2 img {
+  margin-top: -25%;
+}
+
+.botão-editar-perfil {
+  background-color: rgb(99, 124, 255, 0.70)!important;
+  border: none;
+  font-size: 14px!important;
+  color: white!important;
+  text-decoration: none;
+  border-radius: 20px 20px!important;
+  padding: 5% 15% 5% 15%;
+  margin-top: 15%;
+}
+
+
+
+/* ------------ PERFIL DE DENTRO ------------*/
+
+.fundo-principal2 {
+  border-radius: 10px 10px;
+  background-color: rgb(99, 124, 255, 0.12);
+  margin-left: 4%;
+  margin-bottom: 5%;
+  padding: 0% 3% 3% 3%!important;
+}
+
+.fundo-principal2 label {
+  margin: 2% 0% 1% 0%;
+  font-size: 16px;
+}
+
+.nome label {
+  margin-top: 3%;
+}
+
+.form-control:disabled,
+.form-select:disabled  {
+  font-size: 14px;
+}
+
+.input-genero-livro,
+.input-genero,
+.input-telefone,
+.input-email,
+.input-nascimento,
+.input-nome,
+.input-apelido {
+  margin: 0% 0% 0% 0%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  background-color: white!important;
+  border: none!important;
+  border-radius: 8px 8px!important;
+  font-size: 14px;
+  padding: 1.2% 1% 1.2% 1%!important;
+}
+
+.input-genero-livro {
+  padding: 4.2% 4% 4.2% 4%!important;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.form-check-input:disabled~.form-check-label, 
+.form-check-input[disabled]~.form-check-label {
+  opacity: 100!important;
+}
+
+#formulario .add-categoria {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #637CFF;
+}
+
+#formulario .remove-categoria {
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 2%;
+}
+
+
+
+
+/* ------------ RESPONSIVIDADE ------------ */
+@media (min-width: 1400px) {
+   
+}
+
+
+@media (max-width: 1199px) {
+  .fundo-principal p {
+    margin-left: 20%;
+  }
+
+  .botão-editar-perfil {
+    margin-left: -50%;
+    margin-top: 30%;
+  }
+
+  .melhor-anunciante{
+    margin-left: 17%;
+  }
+}
+
+@media (max-width: 991px) {
+  .fundo-principal p {
+    margin-left: 35%;
+  }
+
+  .botão-editar-perfil {
+    margin-left: -100px;
+    margin-top: 30px;
+    padding: 20% 40% 20% 40%;
+  }
+
+  .melhor-anunciante{
+    margin-left: 30%;
+  }
+}

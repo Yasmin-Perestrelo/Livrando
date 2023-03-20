@@ -1,0 +1,400 @@
+.livro .nav-link {
+  color: #637CFF!important;
+}
+
+/* ------------ FILTRO ------------ */
+/*conteúdo ficar no lugar certo*/
+.div-tamanho-navbar {
+  width: 100%;
+  height: 140px;
+}
+
+/*hr embaixo do navbar*/
+hr {
+  z-index: -1;
+}
+
+/*campo do filtro*/
+.filtro-campo {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px 20px;
+  padding-bottom: 2%;
+  width: 30% !important;
+  float: left;
+  margin-bottom: 7%;
+}
+
+/*Título do filtro*/
+.filtro-campo h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*títulos secundários*/
+.localização h2,
+.estado-do-livro h2,
+.categoria-do-livro h2,
+.autor h2,
+.editora h2,
+.preco h2,
+.texto-ano {
+  font-size: 16px;
+}
+
+/*label das informações*/
+.localização label,
+.estado-do-livro label {
+  font-size: 14px;
+}
+
+/*label do estado do livro*/
+.estado-do-livro label {
+  margin-right: 3%;
+}
+
+/*checkbox da categoria do livro*/
+#checkboxes,
+#checkboxes2,
+#checkboxes3,
+#checkboxes4 {
+  display: none;
+}
+
+/*label da checkbox da categoria do livro*/
+#checkboxes label,
+#checkboxes2 label,
+#checkboxes3 label,
+#checkboxes4 label {
+  display: block;
+  font-size: 14px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+.form-check-input:checked {
+  background-color: #637CFF !important;
+  border-color: #637CFF !important;
+}
+
+.form-control:focus {
+  border-color: #637CFF !important;
+}
+
+.selectBox,
+.selectBox label,
+.selectBox2,
+.selectBox2 label,
+.selectBox3,
+.selectBox3 label,
+.selectBox4,
+.selectBox4 label {
+  cursor: pointer;
+}
+
+.selectBox hr,
+.selectBox2 hr,
+.selectBox3 hr,
+.selectBox4 hr {
+  width: 95%;
+  z-index: 0;
+}
+
+.selectBox,
+.selectBox2,
+.selectBox3,
+.selectBox4 {
+  height: 28px;
+  display: grid;
+  grid-template-columns: 35% 60% 5%;
+  font-size: 14px;
+}
+
+.selectBox2 {
+  grid-template-columns: 43% 52% 5%;
+}
+
+.selectBox3 {
+  grid-template-columns: 47% 48% 5%;
+}
+
+.selectBox4 {
+  grid-template-columns: 54% 41% 5%;
+}
+
+#seta-menu-cima,
+#seta-menu-baixo,
+#seta-menu-cima2,
+#seta-menu-baixo2,
+#seta-menu-cima3,
+#seta-menu-baixo3,
+#seta-menu-cima4,
+#seta-menu-baixo4 {
+  width: 13px;
+  margin-top: 50%;
+}
+
+#seta-menu-baixo,
+#seta-menu-baixo2,
+#seta-menu-baixo3,
+#seta-menu-baixo4 {
+  transform: rotate(180deg);
+}
+
+.autor textarea,
+.editora textarea,
+.preco textarea {
+  height: 31px;
+}
+
+.range-ano {
+  width: 100% !important;
+}
+
+.ano-descricao {
+  border: none;
+  background-color: white;
+  width: 90%;
+  margin-left: 20%;
+}
+
+.ano {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.carrossel-campo {
+  margin-left: 3%;
+}
+
+.carrossel-campo h1,
+.top1 {
+  font-size: 22px;
+}
+
+.btn-primary {
+  float: right;
+  margin-top: 10%;
+  background-color: #637CFF !important;
+  border: none !important;
+  border-radius: 10px 10px !important;
+}
+
+.icone-btn {
+  float: right;
+  margin: 38px -50px 10px 10px;
+}
+
+
+
+/* ------------ TOP ANUNCIANTE E CLIENTE ------------ */
+
+.top-anunciante-cliente {
+  width: auto;
+  height: 137px;
+  background-color: rgba(99, 124, 255, 0.12);
+  padding-top: 1%;
+  border-radius: 2px 2px;
+  margin-top: 2%;
+}
+
+#linha-vertical2 {
+  height: 116px;
+  border-right: 2px solid #637CFF;
+  margin-left: -98%;
+}
+
+.anunciante1,
+.anunciante2,
+.cliente1,
+.cliente2 {
+  width: 247px !important;
+  height: 90px !important;
+  background-color: white;
+  margin-left: 1.9%;
+  border-radius: 8px 8px;
+}
+
+.perfil-top1 {
+  width: 60px;
+  height: 60px;
+  margin-top: -15% !important;
+}
+
+.conteudo-top1 h1 {
+  font-size: 16px;
+  margin-top: 7%;
+}
+
+.conteudo-top1 p {
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: -2%;
+}
+
+.conteudo-top1 img {
+  width: 20px;
+  margin-top: -15%;
+  margin-left: -2%;
+}
+
+
+
+/* ------------ RESPONSIVIDADE ------------ */
+@media (min-width: 1400px) {
+  .anunciante1,
+  .anunciante2,
+  .cliente1,
+  .cliente2 {
+    width: 287px !important;
+  }
+
+  .perfil-top1 {
+    margin-top: 5% !important;
+  }
+
+  .carrossel-campo h1, .top1 {
+    margin-left: 5.5%;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .selectBox {
+    grid-template-columns: 41% 53% 5%;
+  }
+
+  .selectBox2 {
+    grid-template-columns: 50% 44% 5%;
+  }
+
+  .selectBox3 {
+    grid-template-columns: 56% 38% 5%;
+  }
+
+  .selectBox4 {
+    grid-template-columns: 65% 29% 5%;
+  }
+
+  .anunciante1,
+  .anunciante2,
+  .cliente1,
+  .cliente2 {
+    width: 210px !important;
+    margin-left: 1.7%;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .filtro-campo {
+    width: 40% !important;
+  }
+
+  .carrossel-campo h1 {
+    font-size: 20px !important;
+  }
+
+  .anunciante1,
+  .anunciante2,
+  .cliente1,
+  .cliente2 {
+    width: 163px !important;
+    margin-left: 1%;
+  }
+
+  #linha-vertical2 {
+    margin-left: -98.7%;
+  }
+
+  .conteudo-top1 h1 {
+    margin-left: 12%;
+  }
+
+  .conteudo-top1 p {
+    margin-left: 12%;
+  }
+
+  .conteudo-top1 img {
+    margin-top: -35%;
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 767px) {
+  .div-tamanho-navbar {
+    height: 100px;
+  }
+  
+  .filtro-campo {
+    width: 100% !important;
+  }
+
+  .titulo-pesquisa-livro {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .btn-filtrar {
+    margin-top: 1%!important;
+    margin-left: 33.5%;
+  }
+
+  .carrossel-campo h1:first-child {
+    margin-top: 5%!important;
+  }
+
+  .carrossel-campo h1 {
+    font-size: 18px!important;
+  }
+
+  .anunciante1,
+  .cliente2 {
+    width: 47.8% !important;
+    height: 90px !important;
+  }
+
+  .conteudo-top1 h1 {
+    margin-top: 11%;
+  }
+
+  .img-venda {
+    margin-left: 8%!important;
+  }
+  
+  .conteudo-top1 img {
+    width: 20px;
+    margin-top: -21%;
+    margin-left: 4%;
+  }
+
+  .top1 {
+    margin-top: 15%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .logo {
+    margin-left: -70%!important;
+  }
+
+  .conteudo-top1 p,
+  .conteudo-top1 h1 {
+    margin-left: 20%;
+  }
+
+  .perfil-top1 {
+    margin-top: -100%!important;
+  }
+
+  .conteudo-top1 img {
+    margin-top: -35%!important;
+    margin-left: 5%;
+  }
+
+  .img-venda {
+    margin-left: 15%!important;
+  }
+}
